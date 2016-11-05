@@ -16,7 +16,6 @@ def instantiate_Ie():
   return browser
 
 driver = instantiate_Ie()
-
 fieldglass_username = "field glass username goes here"
 fieldglass_password = "fieldglass password goes here"
 driver.implicitly_wait(3)
