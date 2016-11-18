@@ -23,8 +23,8 @@ time.sleep(5)
 
 def login_fg(): 
   #fg form values
-  fieldglass_username = "Itrius"
-  fieldglass_password = "Chris101"
+  fieldglass_username = 'username'
+  fieldglass_password = 'password'
 
   #username input
   elem = driver.find_element_by_name('username')
@@ -32,6 +32,7 @@ def login_fg():
   elem.send_keys(fieldglass_username)
   #password input
   elem = driver.find_element_by_name('password')
+  elem.clear()
   elem.send_keys(fieldglass_password)
   elem.submit()
 
